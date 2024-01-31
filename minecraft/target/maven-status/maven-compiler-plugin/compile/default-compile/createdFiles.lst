@@ -1,0 +1,13 @@
+com\bloodypk\utilplugin\commands\close.class
+com\bloodypk\utilplugin\commands\discord.class
+com\bloodypk\utilplugin\UtilPlugin.class
+com\bloodypk\utilplugin\commands\help.class
+com\bloodypk\utilplugin\events\events.class
+com\bloodypk\utilplugin\commands\open.class
+com\bloodypk\utilplugin\commands\party.class
+com\bloodypk\utilplugin\commands\perm.class
+com\bloodypk\utilplugin\discord\discordBot.class
+com\bloodypk\utilplugin\data\dataManager.class
+com\bloodypk\utilplugin\commands\nick.class
+com\bloodypk\utilplugin\commands\unnick.class
+com\bloodypk\utilplugin\permissions\permissionManager.class

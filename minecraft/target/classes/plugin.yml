@@ -1,0 +1,41 @@
+name: UtilPlugin
+version: '1.0-SNAPSHOT'
+main: com.bloodypk.utilplugin.UtilPlugin
+api-version: 1.19
+authors: [ BloodyPeaceKeeper ]
+website: https://bloodypk.com/
+commands:
+  Help:
+  Discord:
+  Perm:
+    usage: /perm [set|revoke] [player] [permission]
+    permission: utilplugin.perm
+  Nick:
+    usage: /nick [nickname]
+    permission: utilplugin.nick
+  Unnick:
+    permission: utilplugin.nick
+  Close:
+    permission: utilplugin.close
+  Open:
+    permission: utilplugin.close
+
+permissions:
+  utilplugin.owner:
+    description: For the owner of the server.
+    default: op
+    children:
+      utilplugin.close: true
+      utilplugin.perm: true
+      utilplugin.donator: true
+  utilplugin.perm:
+    description: Can run perm command.
+    default: op
+  utilplugin.close:
+    description: Can open/close the server.
+    default: false
+  utilplugin.donator:
+    description: Get perks for donating.
+    default: op
+    children:
+      utilplugin.nick: true
